@@ -1,2 +1,2 @@
 # project
-any project repo
+only directory contain a small and sigle project
