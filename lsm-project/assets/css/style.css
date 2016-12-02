@@ -1,0 +1,107 @@
+* {
+  font-family: Arial;
+  font-size: 1em; }
+
+p {
+  margin: 0; }
+
+div.clear {
+  clear: both; }
+
+hr {
+  border: #f5f5f5 solid thin; }
+
+.widget, .open--complete .widget__box {
+  overflow: hidden;
+  border: thin solid #f5f5f5; }
+
+.widget__box {
+  padding: 1em; }
+
+.widget__box img.logo {
+  float: right;
+  margin-bottom: 10px; }
+.widget__box p.title {
+  margin-top: 60px;
+  margin-bottom: 0.5em; }
+.widget__box .row .box img {
+  float: left; }
+@media screen and (max-width: 430px) {
+  .widget__box .row ul.services {
+    margin-left: -1.5em; } }
+.widget__box .row ul.services li {
+  list-style-image: url("../images/sqpurple.png"); }
+  @media screen and (max-width: 430px) {
+    .widget__box .row ul.services li {
+      float: left; } }
+.widget__box .row img.image-thumb {
+  float: left;
+  margin-right: 30px; }
+  @media screen and (max-width: 430px) {
+    .widget__box .row img.image-thumb {
+      width: 100%;
+      margin-bottom: 0.5em; } }
+.widget__box .parking_row {
+  width: 100%;
+  float: left;
+  margin-top: 1em; }
+  .widget__box .parking_row a:link.parkingSlots {
+    float: left;
+    padding: 1em;
+    text-align: center;
+    border: thin solid #f5f5f5;
+    background-color: blue;
+    text-decoration: none; }
+    @media screen and (max-width: 430px) {
+      .widget__box .parking_row a:link.parkingSlots {
+        padding: 1em 0 1em 0;
+        width: 100%;
+        color: #fff; } }
+    .widget__box .parking_row a:link.parkingSlots p {
+      color: #fff; }
+    .widget__box .parking_row a:link.parkingSlots span.price {
+      color: red;
+      font-weight: bold; }
+  .widget__box .parking_row a:hover.parkingSlots {
+    background-color: #f5f5f5; }
+  .widget__box .parking_row a:hover.parkingSlots p {
+    color: #000; }
+.widget__box .row__footer {
+  min-height: 2em; }
+
+.closed {
+  height: 15%; }
+  .closed .row, .closed hr {
+    display: none; }
+  .closed .parking_row {
+    display: none; }
+
+.open .row, .open hr {
+  display: block; }
+.open .parking_row {
+  display: block; }
+
+.open--complete, .close--complete .widget {
+  height: auto;
+  border: none; }
+  .open--complete .parking_row, .close--complete .widget .parking_row {
+    display: block; }
+
+.close--complete {
+  height: 15%;
+  border: thin solid #f5f5f5; }
+  .close--complete .row, .close--complete hr {
+    display: none; }
+  .close--complete .parking_row {
+    display: none; }
+
+a.close {
+  float: right;
+  color: red;
+  text-decoration: none; }
+
+.fade-in {
+  opacity: 0;
+  animation: fadeIn .5s ease-in 1 forwards; }
+
+/*# sourceMappingURL=style.css.map */

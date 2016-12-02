@@ -1,0 +1,47 @@
+<meta name="viewport"
+	content="width=device-width, user-scalable=no,initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
+
+<link rel="stylesheet" type="text/css" href="style.css" media="all">
+<script src="vanilla.js"></script>
+<script src="custom.js"></script>
+
+	<div class="widget closed">
+
+		<div class="widget__box">
+			<img src="logo.png" class="logo" />
+			<p>{{dictionary.bookYourParking}} {{vendor.departureAirport}}</p>
+			<div class="row">
+				<div class="row__header">
+					<p class="title">{{dictionary.featuresTitle}}</p>
+				</div>
+				<dvi class="box"> <img class="image-thumb" src="assets/images/{{vendor.map}}" />
+				<ul class="services">
+					{{#each vendor.features}}
+					<li>{{this}}</li>
+					{{/each}}
+				</ul>
+			</div>
+			<div class="parking_row">
+				{{#each parkings}}
+				<a href="javascript:void(0)" class="parkingSlots" id_parking="{{this.id}}">
+					<p class="text">
+					{{this.indoor}}
+					<br/>
+					{{this.insurance}}
+					<br/>
+					<span class="price">
+						{{this.price}}
+					</span>
+					</p>
+				</a>
+				{{/each}}
+			</div>
+			<div class="clear"></div>
+			<div class="row__footer">
+				<hr />
+				<a href="javascript:void(0)" class="close" id="button">Nascondi i dettagli</a>
+			</div>
+		</div>
+
+	</div>
+
